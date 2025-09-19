@@ -1,0 +1,74 @@
+﻿UI Walkthrough
+Submission Workflow
+1. Decide if you think the image is interesting (err on the side of not interesting if unsure). The below is likely a non-interesting image due to the simplicity and repetition of the curves.
+   1. See “Interesting” Criteria for more information on defining this criteria, along with some examples.
+  
+
+
+
+2. If you rule that the image is not interesting, the task should be skipped and that provided as the reason why.
+
+
+  
+
+
+
+
+
+3. If you agree that the image is interesting, then you should fill out a complex Question and Answer pair for the image. Note that the answer should be JUST the value or term, with no additional commentary or text, including units.
+   1. See Grading Criteria for more information on complexity criteria and the Correct Examples for end-to-end examples.
+   2. When estimating value(s) from the chart that are not explicitly labeled, you need to be very precise with the value(s) selected.
+      1. Please use a combination of Excalidraw and a ruler to accurately obtain approximate values. 
+         1. First, use Excalidraw to project the point(s) onto the appropriate axis (see Correct Examples)
+         2. Then, if not exactly on a tick mark, use a ruler to measure the distance from the tick where the line intersects the axis.
+         3. Take the reading as a fraction of the overall length between tick marks, then multiply that fraction by the tick distance to get a value for how far above/below a tick the intersection point is
+            1. E.g. Tick marks are labeled 10 and 20, ticks are 20mm apart, and intersection point is 3mm above the 10 mark:
+               1. 3mm / 20mm (measured tick distance) = 0.15
+               2. 0.15 * 10 (labeled tick distance) = 1.5
+               3. Intersection is then 1.5 above 10 mark - value is 11.5
+      2. When an answer is estimated to any extent (even using the above method), please use the word “approximately” before your numeric answer or use a range (e.g. 10 to 12) to indicate that this is an approximation and not an explicitly labeled value.
+      3. For approximation values, ensure answers are within ±10% of the correct value.
+
+
+  
+
+
+
+4. Provide the units associated with your answer. This should always be filled, even if you’re just putting ‘unitless’ (for example, on a ratio of the same units).
+
+
+  
+
+
+
+5. Give the answer type. If you are reading any unlabeled points off a chart that aren’t exactly on a tick mark, it should be marked an Approximation Value. If you are reading only explicitly labeled points or points align exactly on tick marks, you can call it an Exact Value. If the question requires picking between a set of discrete options (e.g. giving the name of one curve) then it is Inherently Multiple Choice.
+   1. Only use natively binary or multiple-choice questions a maximum of 30% of the time
+      1. The majority of questions should not be inherently binary in answer or have only a small set of fixed possible answers. For example, avoid questions like “Which curve is …” when there are only 4 curves, as there are only 4 possible answers. Another similar question would be “Which panel is…”.
+      2. Aim for no more than 1 out of 3 samples to be of this format, the others should all be unconstrained in their answers, meaning that they could take any numeric value.
+
+
+  
+
+
+
+6. Input how long the task took you to complete rounded to the nearest minute. Do not input anything else in this field.
+
+
+  
+
+
+
+7. Submit your task.
+________________
+
+
+Review Workflow
+1. G
+
+
+
+
+________________
+
+
+Adjudication Workflow

@@ -1,0 +1,130 @@
+﻿Project Zephyrus Guidelines
+
+
+Project Overview
+Step-by-Step Workflow
+“Interesting” Criteria
+Grading Criteria
+
+
+Project Overview
+For this pilot phase of Project Zephyrus, you will create complex questions, answers, and explanations for images containing one or more scientific charts.
+
+
+On the Snorkel Expert Platform, you will see:
+1. An image on the left side containing one or more charts.
+2. Empty fields on the right that need to be filled.
+
+
+The task is to analyze the chart(s) and, if they are sufficiently “interesting”, come up with a complex question and answer pair.
+Step-by-Step Workflow
+Please see the UI Walkthrough for many additional details and screenshots.
+Submission
+In Submission, you will be shown an image of 1+ charts/plots of some kind. Your task is to generate a complex QA pair with appropriate units based on the image.
+
+
+1. Determine if the chart is interesting or not, skip it if not
+2. Generate a complex question and precise answer using Excalidraw
+3. Fill out the units for the answer
+4. Indicate the type of answer
+   1. Please note - “Inherently Multiple Choice” does not mean a literal multiple-choice question with given answer options. It just means that the answer comes from a discrete set of choices and cannot take any value. Do not give multiple choice answer options on any question.
+5. Fill out AHT
+6. Submit task
+Review
+In Review, you will be shown the chart(s) and corresponding question from a submitted task. Your task is to generate a precise answer to the given question. Your workflow mirrors the Submission workflow, with the one exception that the question will be given to you instead of you creating it.
+
+
+1. Come up with a precise answer using Excalidraw
+2. Fill out the units for the answer
+3. Indicate the type of answer
+4. Fill out AHT
+5. Submit task
+
+
+Do not edit the question in the review stage.
+
+
+Adjudication
+In Adjudication, you will be shown the original question, answers from submitter and reviewers (including units), and answer type. Your task is to use this submitted/reviewed data to either accept the task or send it back for revision.
+
+
+1. Look at the answers - determine if at least two out of three answers are within 10% of each other
+   1. If there is not agreement between at least two answers, one being the submitter’s, then the task must be sent back for revision with comments that the answers do not match.
+   2. Agreement includes all of the following:
+      1. Answer value
+      2. Units
+      3. Type of Answer
+2. If at least two answers align, then solve the question yourself and see if your answer aligns with the two (or more)
+   1. If your answer does not align, then the task should be sent back for revision with comments that your answer differed.
+3. If your answer agrees with at least two others, accept the task, fill out AHT, and submit.
+“Interesting” Criteria
+Chart images must be sufficiently “interesting” to generate good QA pairs. To determine if a chart is interesting or not, use the below criteria as guidelines (not strict requirements) for an interesting chart:
+1. Axes are clearly marked and have ranges, titles, and units, if applicable.
+2. Chart is readable and elements of the chart can be clearly made out.
+3. Chart does not represent simple functions/trends (e.g. linear, cosine, etc.).
+4. Chart should represent some meaningful relationship between elements.
+5. Not necessary, but helps if there are multiple values/plots in same image.
+Note: Charts in other languages (ex. German, French, Russian) can be marked as interesting as long as they fit the criteria above.
+
+
+Avoid:
+* Charts without clear labels.
+* Charts that show simple functions.
+* Charts that show simple trends.
+* Blurry images
+* Cut-off Charts/Graphs
+Examples
+Not interesting
+Too simple of trends
+	  
+
+	Too simple of functions
+	  
+
+	No labels
+	  
+
+	Complex image, but simple trends
+	  
+
+	  
+
+	  
+
+	  
+
+	
+
+
+
+  
+
+	
+
+Interesting
+Nicely labeled, several related panels
+	  
+
+	Only one chart, but sufficiently complex and labeled with a non-trivial representation
+	  
+
+	Many values/plots on same panel
+	  
+
+	Grading Criteria
+The created questions should:
+1. Be complex and not straightforward to answer, requiring extraction from and reasoning across several elements from the image. 
+   1. Follow these guideline criteria on complexity:
+      1. Question requires analyzing 3+ regions of the image
+      2. Question requires at least two calculations or two reasoning steps
+      3. Question requires reasoning over relationship between multiple data points
+      4. Avoid questions that are overly complex (i.e. requiring 5+ reasoning steps) - especially in terms of mathematical computation. Math operations should be limited to one per question - i.e. you can ask for a ratio, or you can ask for a difference. Do not require too many mathematical steps to the point that accuracy is very difficult (i.e. asking the difference between 2 ratios).
+2. Cover multiple different domains, which are determined by the provided images.
+3. Require reading intermediate values to answer, including those that are not explicitly labeled in the image.
+4. Not be able to be solved without looking at the image.
+5. Potentially require comparing different plots in the same image.
+6. Potentially require reading values from plots, particularly those that are not explicitly labeled
+7. Questions should not be multiple choice or contain multiple parts.
+
+
+The answer should be numeric and verifiable. The question should have one objectively correct answer that is not open to interpretation. Free text/sentence-type answers are not permitted.

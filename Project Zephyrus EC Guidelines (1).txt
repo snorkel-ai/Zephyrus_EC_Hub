@@ -1,0 +1,75 @@
+﻿Rate Schedule (Current)
+
+
+Project Zephyrus Rates
+	“Interesting” Accepted Submission
+	$5
+	* These rates only apply for the current batch and are subject to change
+* Submissions must pass through a review process to become “Accepted.”
+	“Interesting” Review
+	$5
+	“Interesting” Adjudication Accepted
+	$7
+	
+
+
+
+
+
+Project Zephyrus Rates
+	“Not Interesting” Accepted Submission
+	$1
+	* These rates only apply for the current batch and are subject to change
+* Submissions must pass through a review process to become “Accepted.”
+	“Not Interesting” Adjudication Accepted 
+	$1
+	
+
+Rate Schedule (8/26-9/14)
+
+
+Project Zephyrus Rates
+	“Not Interesting” Accepted Submission
+	$1
+	* These rates only apply for the current batch and are subject to change
+* Submissions must pass through a review process to become “Accepted.”
+	“Interesting” Accepted Submission
+	$5
+	“Interesting” Review
+	$6
+	“Interesting” Adjudication Accepted
+	$7
+	
+
+Rate Schedule (8/22-8/26)
+Project Zephyrus Pilot Rates
+	“Not Interesting”
+Accepted Submission
+	$1
+	* These rates only apply to the pilot phase of this project and are subject to change.
+* Submissions must pass through a review process to become “Accepted.”
+	"Interesting" Accepted Submission
+	$15
+	“Interesting” Review
+	$5
+	Adjudication Accepted
+	$5
+	
+
+	
+
+ Original Rate Schedule (pre-8/22)
+Project Zephryus Pilot Rates
+	“Not Interesting”
+Accepted Submission
+	$1
+	* These rates only apply to the pilot phase of this project and are subject to change.
+* Submissions must pass through a review process to become “Accepted.”
+	"Interesting" Accepted Submission
+	$15
+	“Interesting” Review
+	$5
+	“Not Interesting” Review
+	$1
+	Adjudication Accepted
+	$3

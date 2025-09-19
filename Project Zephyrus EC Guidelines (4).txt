@@ -1,0 +1,147 @@
+﻿Please see below for high quality examples. Note that for examples 3-6, there are lines drawn on the image to help approximate values. Use a ruler or straight-edge to do the same.
+Example 1
+Image
+  
+
+Question
+Which colorectal cancer cell line shows the largest absolute increase in VEGF protein concentration (ng/l) when treated with IL-17 compared to its PBS control?
+Answer
+Final Answer: LoVo
+Why is this good?
+* Requires identification of the panel of interest (panel B) without explicitly saying Panel B, need to check axes of multiple charts
+* Requires identification of which bars correspond to PBS treatment vs. IL-17
+* Requires multiple calculations - need to find absolute increase for each cell line
+Example 2
+Image
+  
+
+Question
+Based on the convergence plots for minimizing Nesterov’s function, which algorithm variant first reduces the normalized error (f(x_k)–f(x) over f(x_0)–f(x)) down to 10^-4 using the fewest oracle calls?
+Answer
+RDD_NE with parameter NE=12000
+Why is this good?
+* Requires identification and comparison across numerous different algorithm curves
+* Requires comparison across many different panels
+* Requires extrapolation of values from unlabeled points
+
+
+Example 3
+Image
+  
+
+Question
+What is the approximate value of the dispersion curve at the r value where there is the largest difference between velocity and PSF?
+Answer
+Approximately 70 km/s
+
+
+Why is this good?
+* Requires reading labels to identify curves (i.e. “Velocity” curve vs. saying “the red curve”)
+* Requires several sequential steps of reasoning - not just reading a single value
+   * Identify the Velocity and PSF curves
+   * Find location of largest difference between
+   * Find the corresponding r value
+   * Identify the Dispersion curve
+   * Get the Dispersion value at that r value
+
+
+Example 4
+Image
+  
+
+Question
+At the time where the 2 curves in I_Diode intersect for the 3rd time, what is the approximate V_Diode value for PCB technology?
+Answer
+Approximately -90 V
+
+
+Note: Use of word “approximately” here given difficulty in estimating exact value due to steep slope. Alternatively, could give a small range such as -85 to -95.
+Why is this good?
+* Requires identification of unlabeled intersection points as well as counting to identify the third one
+* Requires approximation of an unlabeled value for the final answer
+* Requires comparison of relationship between two different plots in one image
+* Requires multiple sequential reasoning steps:
+   * Identify I_Diode and V_Diode graphs
+   * Find the Time value of the third intersection point in I_Diode
+   * Identify the PCB curve in the V_Diode graph
+   * Estimate the value of the PCB curve at the identified time value
+
+
+Example 5
+Image
+  
+
+Question
+For the time series (red, green, blue, pink) in image A with the greatest drawdown in a 10 ns window, determine the percentage of reduction for that time series during that window.
+Answer
+Approximately 19% (approximate due to needing to estimate the 10ns window boundaries as well as the intermediate Y value at those boundaries)
+
+
+Why is this good?
+* Requires multiple sequential reasoning steps:
+   * Identify the curve with the greatest drawdown in a 10 ns window
+   * Identify the 10 ns window where that drawdown occurs
+   * Estimate the unlabeled SASA values at the beginning and end of that time window
+   * Perform a % reduction calculation based on those values
+* Requires estimation of unlabeled points
+
+
+Note: An alternative strong question could involve taking the 10 ns window identified in panel A and using it to get values from panel B - adds extra complexity by having to reason across multiple panels.
+
+
+Example 6
+
+
+  
+
+
+
+Question
+Calculate the ratio of the fold-change in cytosolic cytochrome c release to the fold-change in apoptotic index when comparing SID Wt to Wt.
+Answer
+Approximately 1.6
+
+
+Why is this good?
+* Requires identification of the appropriate panels (A and C) without explicitly naming them
+* Requires multiple sequential reasoning steps:
+   * Identify panel A as the first panel of interest
+   * Get values of the difference between SID Wt and Wt in A (approx. 240)
+   * Identify panel B as the second panel of interest
+   * Get values of the difference between SID Wt and Wt in B (approx. 150)
+   * Use these values to calculate the ratio (240/150 = 1.6)
+
+
+
+
+Example 7
+
+
+
+
+  
+
+
+
+Question
+What is the difference in median 30-year government bond yields between Canada and the United States as predicted by the banks in March 2019?
+Answer
+Approximately 0.8
+
+
+Example 8
+  Question
+Calculate the ratio of cell numbers between the concentration 10^-6 M Met Enkephalin and the concentration of 10^-4 M Met Enkephalin at the 24-hour time point.
+
+
+Answer
+Approximately 2.2
+
+
+Example 9
+  
+
+ Question
+At the temperature where Tan Delta reaches its maximum peak, what is the ratio of the Storage Modulus to the Loss Modulus?
+Answer
+Approximately 1.25

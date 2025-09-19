@@ -1,0 +1,87 @@
+﻿Example 1
+  
+
+Incorrect Question:
+At frame index n approximately 460, estimate the values of the magnitude of D sub n for the three window lengths:
+k = 1 (red),
+k = 2 (green), and
+k = 4 (blue).
+Then, compute the percentage decrease in magnitude when going from k = 1 to k = 4 at that frame.
+Why this is incorrect:
+This example question has multiple asks. A correct question will have only one ask that has a numerical or short answer.  Part 1 is also not complex as it is simply just looking at the x-axis at 460 and then seeing what each line’s value is. 
+Corrected Question
+Compute the percentage decrease in magnitude when going from k = 1 to k = 4 at that frame.  
+Why this is correct:
+This involves looking at multiple points on the chart coupled with a computation to find a single numerical and verifiable answer. 
+
+
+Example 2
+  
+
+Incorrect Question:
+How does 1-NN rul affect the accuracy in general?
+A: It only increased the accuracy of the results with filtering.
+B: It only increased the accuracy of results without filtering.
+C: It increased the accuracy of results both with and without filtering.
+D: It doesn't increase the accuracy with or without filtering.
+Why this is incorrect:
+Questions should not be in a multiple choice format. The question should be singular and that has a singular answer.
+Corrected Question
+Which class (specifically with/without filtering) shows the greatest increase from the 1-NN rul?
+Why this is correct:
+Singular answer that requires looking at multiple areas of the graphs. One computational step also involved to add complexity.
+
+
+Example 3
+  
+
+Incorrect question
+Why is the PSF curve critical for interpreting the flux and kinematic data in such studies?
+
+Why this is incorrect:
+The question is open-ended and requires a text-based answer instead of a single numerical value.
+
+Corrected question
+What .1 r (arsec) interval has the greatest increase in Velocity?
+Why this is correct:
+The question is complex by examining multiple areas of the chart and using a computation in finding the one singular answer.
+
+
+Example 3
+  
+
+
+Incorrect Question
+Which trace has the greatest change in velocity between radius -5" and 5"?
+
+
+Why this is incorrect:
+The question/answer is merely picking which trace has the greatest change. The answer is also very obvious from a quick glance at the traces and doesn’t require calculation or multi-step reasoning. This would also be considered a binary question, so it’s acceptable but only 30% of the time.
+Corrected Question
+What is the net change in velocity of the blue trace between radius -5" and 5"?
+
+
+Why this is correct:
+This changes the complexity requiring a numerical answer by analyzing two points on the graph and estimating the difference. 
+
+
+
+
+
+Example 4
+  
+
+
+
+Incorrect Question
+Which brain mapping method shows the greatest relative reduction in the overlap percentage from 3 subjects to 4 subjects? (Our Method)
+
+
+Why this is incorrect:
+Question is too simple, ‘Our Method’ clearly shows the largest reduction and is likely implied given that they’re demonstrating efficacy of their method, does not require any value extrapolation and answer is natively multiple-choice from only 3 options.
+Corrected Question
+What is the difference in reduction for ‘Our Method’ when going from 2 to 3 subjects vs. when going from 3 to 4 subjects?
+
+
+Why this is correct:
+Introduces additional complexity by (a) asking for specific values of reduction and (b) requiring comparison between two separate subject counts. Also makes the answer numeric and non-multiple choice.
