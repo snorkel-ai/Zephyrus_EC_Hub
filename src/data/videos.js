@@ -26,11 +26,11 @@ export const videos = [
     title: "Understanding Logarithmic Axes",
     filename: "logarithmic_axis.mp4",
     description: "Learn how to properly read, interpret, and analyze charts with logarithmic axes for accurate data extraction.",
-    category: "Chart Analysis"
+    category: "Logarithmic Charts"
   }
 ];
 
 export const videoCategories = [
   "Submission Walkthrough",
-  "Chart Analysis"
+  "Logarithmic Charts"
 ];

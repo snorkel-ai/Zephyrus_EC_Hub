@@ -153,17 +153,28 @@ function App() {
                     className={`category-btn ${selectedCategory === 'All' ? 'active' : ''}`}
                     onClick={() => setSelectedCategory('All')}
                   >
-                    All Guidelines
+                    <span>📚 All Guidelines</span>
                   </button>
-                  {categories.map(category => (
-                    <button
-                      key={category}
-                      className={`category-btn ${selectedCategory === category ? 'active' : ''}`}
-                      onClick={() => setSelectedCategory(category)}
-                    >
-                      {category}
-                    </button>
-                  ))}
+                  {categories.map(category => {
+                    const icons = {
+                      'Overview': '📋',
+                      'Criteria': '🎯',
+                      'Grading': '📝',
+                      'Rates': '💰',
+                      'Updates': '🔄',
+                      'UI Guide': '🖥️',
+                      'Examples': '✅'
+                    };
+                    return (
+                      <button
+                        key={category}
+                        className={`category-btn ${selectedCategory === category ? 'active' : ''}`}
+                        onClick={() => setSelectedCategory(category)}
+                      >
+                        <span>{icons[category]} {category}</span>
+                      </button>
+                    );
+                  })}
                 </div>
               </div>
 
@@ -189,8 +200,8 @@ function App() {
                     setSelectedVideo(null);
                   }}
                 >
-                  <h4>Chart Analysis</h4>
-                  <p className="video-description-preview">Essential skills for reading and interpreting different types of charts and axes</p>
+                  <h4>Logarithmic Charts</h4>
+                  <p className="video-description-preview">Essential skills for reading and interpreting charts with logarithmic axes</p>
                 </div>
               </div>
             </>
@@ -222,24 +233,7 @@ function App() {
                 <div className="welcome-content">
                   <h2>Project Zephyrus Guidelines</h2>
                   <p>Everything you need to know about creating high-quality submissions for Project Zephyrus.</p>
-                  
-                  <div className="quick-start">
-                    <h3>Quick Start</h3>
-                    <div className="quick-start-grid">
-                      <div className="quick-start-card" onClick={() => setSelectedCategory('Overview')}>
-                        <h4>📋 Project Overview</h4>
-                        <p>Start here to understand the submission process</p>
-                      </div>
-                      <div className="quick-start-card" onClick={() => setSelectedCategory('Criteria')}>
-                        <h4>🎯 Quality Criteria</h4>
-                        <p>Learn what makes charts "interesting"</p>
-                      </div>
-                      <div className="quick-start-card" onClick={() => setSelectedCategory('Examples')}>
-                        <h4>✅ Examples</h4>
-                        <p>See correct and incorrect examples</p>
-                      </div>
-                    </div>
-                  </div>
+                  <p className="instruction-text">Select a category from the sidebar to view guidelines.</p>
                 </div>
               </div>
             )
@@ -248,12 +242,12 @@ function App() {
               <div className="tutorial-series-detail">
                 <div className="tutorial-series-header">
                   <h2>
-                    {selectedTutorialSeries === 'submission' ? 'Submission Walkthrough' : 'Chart Analysis'}
+                    {selectedTutorialSeries === 'submission' ? 'Submission Walkthrough' : 'Logarithmic Charts'}
                   </h2>
                   <p>
                     {selectedTutorialSeries === 'submission' 
                       ? 'Complete step-by-step guide through the Project Zephyrus submission process'
-                      : 'Essential skills for reading and interpreting different types of charts and axes'
+                      : 'Essential skills for reading and interpreting charts with logarithmic axes'
                     }
                   </p>
                 </div>
@@ -284,7 +278,7 @@ function App() {
                         if (selectedTutorialSeries === 'submission') {
                           return video.category === 'Submission Walkthrough';
                         } else if (selectedTutorialSeries === 'chart-analysis') {
-                          return video.category === 'Chart Analysis';
+                          return video.category === 'Logarithmic Charts';
                         }
                         return false;
                       })
@@ -318,8 +312,8 @@ function App() {
                       <p>Complete 3-part guide through the submission process</p>
                     </div>
                     <div className="series-card" onClick={() => setSelectedTutorialSeries('chart-analysis')}>
-                      <h3>📊 Chart Analysis</h3>
-                      <p>Essential skills for reading complex charts</p>
+                      <h3>📊 Logarithmic Charts</h3>
+                      <p>Essential skills for reading logarithmic charts</p>
                     </div>
                   </div>
                 </div>
