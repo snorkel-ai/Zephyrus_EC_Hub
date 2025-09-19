@@ -133,19 +133,6 @@ function App() {
                 </div>
               </div>
 
-              <div className="guidelines-list">
-                <h3>Guidelines ({filteredGuidelines.length})</h3>
-                {filteredGuidelines.map(guideline => (
-                  <div
-                    key={guideline.id}
-                    className={`guideline-item ${selectedGuideline?.id === guideline.id ? 'active' : ''}`}
-                    onClick={() => setSelectedGuideline(guideline)}
-                  >
-                    <h4>{guideline.title}</h4>
-                    <span className="category-tag">{guideline.category}</span>
-                  </div>
-                ))}
-              </div>
             </>
           ) : (
             <>
@@ -179,14 +166,21 @@ function App() {
         {/* Main Content */}
         <main className="main-content">
           {activeTab === 'guidelines' ? (
-            selectedGuideline ? (
-              <div className="guideline-detail">
-                <div className="guideline-header">
-                  <h2>{selectedGuideline.title}</h2>
-                  <span className="category-badge">{selectedGuideline.category}</span>
+            selectedCategory && selectedCategory !== 'All' ? (
+              <div className="category-guidelines">
+                <div className="category-header">
+                  <h2>{selectedCategory} Guidelines</h2>
+                  <p>All guidelines in the {selectedCategory} category</p>
                 </div>
-                <div className="guideline-content">
-                  {formatContent(selectedGuideline.content)}
+                <div className="guidelines-grid">
+                  {filteredGuidelines.map(guideline => (
+                    <div key={guideline.id} className="guideline-card">
+                      <h3>{guideline.title}</h3>
+                      <div className="guideline-content">
+                        {formatContent(guideline.content)}
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             ) : (
