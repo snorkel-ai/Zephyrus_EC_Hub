@@ -35,7 +35,7 @@ jobs:
     - name: Build React app
       run: npm run build
       env:
-        PUBLIC_URL: /Zephyrus_EC_Hub
+        PUBLIC_URL: .
         
     - name: Add test page to build
       run: |
