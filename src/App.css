@@ -197,21 +197,29 @@ body {
 
 /* Welcome Screen */
 .welcome-screen {
-  text-align: center;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
+  padding: 2rem;
 }
 
-.welcome-screen h2 {
+.welcome-content {
+  text-align: center;
+}
+
+.welcome-content h2 {
   color: #1f2937;
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
-.welcome-screen > p {
+.welcome-content > p {
   color: #6b7280;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .quick-stats {
@@ -241,41 +249,54 @@ body {
   font-weight: 500;
 }
 
-.category-overview h3 {
+/* Quick Start Section */
+.quick-start {
+  margin-top: 2rem;
+}
+
+.quick-start h3 {
   color: #1f2937;
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
-}
-
-.category-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-}
-
-.category-card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  border: 2px solid #e5e7eb;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.category-card:hover {
-  border-color: #2563eb;
-  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.1);
-}
-
-.category-card h4 {
-  color: #1f2937;
-  margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
-.category-card p {
+.quick-start-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quick-start-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.quick-start-card:hover {
+  border-color: #2563eb;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.15);
+  transform: translateY(-2px);
+}
+
+.quick-start-card h4 {
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.quick-start-card p {
   color: #6b7280;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
 }
 
 /* Guideline Detail */
@@ -608,8 +629,11 @@ body {
 
 /* Series Overview */
 .tutorial-series-overview {
-  max-width: 600px;
-  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 700px;
+  margin: 2rem auto 0;
 }
 
 .series-card {
@@ -619,37 +643,25 @@ body {
   padding: 2rem;
   cursor: pointer;
   transition: all 0.2s ease;
+  text-align: left;
 }
 
 .series-card:hover {
   border-color: #2563eb;
-  box-shadow: 0 8px 12px rgba(37, 99, 235, 0.15);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.15);
   transform: translateY(-2px);
 }
 
 .series-card h3 {
   color: #1f2937;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .series-card p {
   color: #6b7280;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-}
-
-.series-stats {
-  display: flex;
-  gap: 1rem;
-}
-
-.series-stats span {
-  background-color: #eff6ff;
-  color: #2563eb;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  font-size: 0.875rem;
-  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+  font-size: 0.95rem;
 }

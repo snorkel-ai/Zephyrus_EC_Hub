@@ -191,40 +191,26 @@ function App() {
               </div>
             ) : (
               <div className="welcome-screen">
-                <h2>Welcome to Project Zephyrus Guidelines</h2>
-                <p>Select a guideline from the sidebar to view its content, or use the search to find specific information.</p>
-                
-                <div className="quick-stats">
-                  <div className="stat-card">
-                    <h3>{guidelines.length}</h3>
-                    <p>Total Guidelines</p>
-                  </div>
-                  <div className="stat-card">
-                    <h3>{categories.length}</h3>
-                    <p>Categories</p>
-                  </div>
-                  <div className="stat-card">
-                    <h3>{filteredGuidelines.length}</h3>
-                    <p>Filtered Results</p>
-                  </div>
-                </div>
-
-                <div className="category-overview">
-                  <h3>Categories Overview</h3>
-                  <div className="category-grid">
-                    {categories.map(category => {
-                      const count = guidelines.filter(g => g.category === category).length;
-                      return (
-                        <div 
-                          key={category} 
-                          className="category-card"
-                          onClick={() => setSelectedCategory(category)}
-                        >
-                          <h4>{category}</h4>
-                          <p>{count} guideline{count !== 1 ? 's' : ''}</p>
-                        </div>
-                      );
-                    })}
+                <div className="welcome-content">
+                  <h2>Project Zephyrus Guidelines</h2>
+                  <p>Everything you need to know about creating high-quality submissions for Project Zephyrus.</p>
+                  
+                  <div className="quick-start">
+                    <h3>Quick Start</h3>
+                    <div className="quick-start-grid">
+                      <div className="quick-start-card" onClick={() => setSelectedCategory('Overview')}>
+                        <h4>📋 Project Overview</h4>
+                        <p>Start here to understand the submission process</p>
+                      </div>
+                      <div className="quick-start-card" onClick={() => setSelectedCategory('Criteria')}>
+                        <h4>🎯 Quality Criteria</h4>
+                        <p>Learn what makes charts "interesting"</p>
+                      </div>
+                      <div className="quick-start-card" onClick={() => setSelectedCategory('Examples')}>
+                        <h4>✅ Examples</h4>
+                        <p>See correct and incorrect examples</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -294,24 +280,18 @@ function App() {
               </div>
             ) : (
               <div className="welcome-screen">
-                <h2>Tutorial Videos</h2>
-                <p>Select a tutorial series from the sidebar to get started.</p>
-                
-                <div className="tutorial-series-overview">
-                  <div className="series-card" onClick={() => setSelectedTutorialSeries('submission')}>
-                    <h3>Submission Walkthrough</h3>
-                    <p>Learn the complete Project Zephyrus submission process through our comprehensive 3-part video series.</p>
-                    <div className="series-stats">
-                      <span>3 Videos</span>
-                      <span>Complete Tutorial</span>
+                <div className="welcome-content">
+                  <h2>Tutorial Videos</h2>
+                  <p>Watch step-by-step video guides to master Project Zephyrus submissions.</p>
+                  
+                  <div className="tutorial-series-overview">
+                    <div className="series-card" onClick={() => setSelectedTutorialSeries('submission')}>
+                      <h3>🎥 Submission Walkthrough</h3>
+                      <p>Complete 3-part guide through the submission process</p>
                     </div>
-                  </div>
-                  <div className="series-card" onClick={() => setSelectedTutorialSeries('chart-analysis')}>
-                    <h3>Chart Analysis</h3>
-                    <p>Master the essential skills for reading and interpreting different types of charts, including logarithmic axes.</p>
-                    <div className="series-stats">
-                      <span>1 Video</span>
-                      <span>Technical Skills</span>
+                    <div className="series-card" onClick={() => setSelectedTutorialSeries('chart-analysis')}>
+                      <h3>📊 Chart Analysis</h3>
+                      <p>Essential skills for reading complex charts</p>
                     </div>
                   </div>
                 </div>
