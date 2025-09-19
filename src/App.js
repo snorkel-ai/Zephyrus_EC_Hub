@@ -29,8 +29,8 @@ function App() {
     return content.split('\n').map((line, index) => {
       if (line.trim() === '') return <br key={index} />;
       
-      // Handle bullet points
-      if (line.startsWith('• ') || line.startsWith('- ')) {
+      // Handle main bullet points (•)
+      if (line.startsWith('• ')) {
         return (
           <div key={index} className="bullet-point">
             {line.substring(2)}
@@ -38,31 +38,65 @@ function App() {
         );
       }
       
-      // Handle numbered points
-      if (/^\d+\./.test(line.trim())) {
+      // Handle sub-bullet points (-)
+      if (line.trim().startsWith('- ')) {
         return (
-          <div key={index} className="numbered-point">
-            {line}
+          <div key={index} className="sub-bullet-point">
+            {line.trim().substring(2)}
           </div>
         );
       }
       
-      // Handle headers (lines that are standalone and don't end with punctuation)
+      // Handle numbered main points
+      if (/^\d+\./.test(line.trim())) {
+        return (
+          <div key={index} className="numbered-point">
+            <strong>{line.match(/^\d+\./)[0]}</strong>
+            <span>{line.replace(/^\d+\./, '').trim()}</span>
+          </div>
+        );
+      }
+      
+      // Handle sub-numbered points (indented with spaces/tabs)
+      if (/^\s+\d+\./.test(line)) {
+        return (
+          <div key={index} className="sub-numbered-point">
+            {line.trim()}
+          </div>
+        );
+      }
+      
+      // Handle headers - lines that don't end with punctuation and are short
       if (line.trim() && !line.trim().endsWith('.') && !line.trim().endsWith(':') && 
-          !line.includes('•') && !line.includes('-') && line.length < 100) {
+          !line.includes('•') && !line.includes('-') && !line.includes('(') &&
+          line.length < 80 && !line.match(/^\d+\./)) {
         return (
           <h3 key={index} className="content-header">
-            {line}
+            {line.trim()}
           </h3>
         );
       }
       
-      return (
-        <p key={index} className="content-paragraph">
-          {line}
-        </p>
-      );
-    });
+      // Handle section headers with colons
+      if (line.trim().endsWith(':') && line.length < 80) {
+        return (
+          <h4 key={index} className="section-header">
+            {line.trim()}
+          </h4>
+        );
+      }
+      
+      // Regular paragraphs
+      if (line.trim()) {
+        return (
+          <p key={index} className="content-paragraph">
+            {line.trim()}
+          </p>
+        );
+      }
+      
+      return null;
+    }).filter(Boolean);
   };
 
   return (
