@@ -161,6 +161,16 @@ function App() {
                   <h4>Submission Walkthrough</h4>
                   <p className="video-description-preview">Complete step-by-step guide through the Project Zephyrus submission process (3 parts)</p>
                 </div>
+                <div
+                  className={`guideline-item tutorial-series-item ${selectedTutorialSeries === 'chart-analysis' ? 'active' : ''}`}
+                  onClick={() => {
+                    setSelectedTutorialSeries('chart-analysis');
+                    setSelectedVideo(null);
+                  }}
+                >
+                  <h4>Chart Analysis</h4>
+                  <p className="video-description-preview">Essential skills for reading and interpreting different types of charts and axes</p>
+                </div>
               </div>
             </>
           )}
@@ -220,11 +230,18 @@ function App() {
               </div>
             )
           ) : (
-            selectedTutorialSeries === 'submission' ? (
+            selectedTutorialSeries ? (
               <div className="tutorial-series-detail">
                 <div className="tutorial-series-header">
-                  <h2>Submission Walkthrough</h2>
-                  <p>Complete step-by-step guide through the Project Zephyrus submission process</p>
+                  <h2>
+                    {selectedTutorialSeries === 'submission' ? 'Submission Walkthrough' : 'Chart Analysis'}
+                  </h2>
+                  <p>
+                    {selectedTutorialSeries === 'submission' 
+                      ? 'Complete step-by-step guide through the Project Zephyrus submission process'
+                      : 'Essential skills for reading and interpreting different types of charts and axes'
+                    }
+                  </p>
                 </div>
                 
                 {selectedVideo ? (
@@ -248,21 +265,30 @@ function App() {
                 <div className="tutorial-series-videos">
                   <h3>Tutorial Videos</h3>
                   <div className="video-grid">
-                    {videos.map(video => (
-                      <div 
-                        key={video.id} 
-                        className={`video-preview-card ${selectedVideo?.id === video.id ? 'active-video' : ''}`}
-                        onClick={() => setSelectedVideo(video)}
-                      >
-                        <div className="video-thumbnail">
-                          <div className="play-icon">▶</div>
+                    {videos
+                      .filter(video => {
+                        if (selectedTutorialSeries === 'submission') {
+                          return video.category === 'Submission Walkthrough';
+                        } else if (selectedTutorialSeries === 'chart-analysis') {
+                          return video.category === 'Chart Analysis';
+                        }
+                        return false;
+                      })
+                      .map(video => (
+                        <div 
+                          key={video.id} 
+                          className={`video-preview-card ${selectedVideo?.id === video.id ? 'active-video' : ''}`}
+                          onClick={() => setSelectedVideo(video)}
+                        >
+                          <div className="video-thumbnail">
+                            <div className="play-icon">▶</div>
+                          </div>
+                          <div className="video-info">
+                            <h4>{video.title}</h4>
+                            <p>{video.description}</p>
+                          </div>
                         </div>
-                        <div className="video-info">
-                          <h4>{video.title}</h4>
-                          <p>{video.description}</p>
-                        </div>
-                      </div>
-                    ))}
+                      ))}
                   </div>
                 </div>
               </div>
@@ -278,6 +304,14 @@ function App() {
                     <div className="series-stats">
                       <span>3 Videos</span>
                       <span>Complete Tutorial</span>
+                    </div>
+                  </div>
+                  <div className="series-card" onClick={() => setSelectedTutorialSeries('chart-analysis')}>
+                    <h3>Chart Analysis</h3>
+                    <p>Master the essential skills for reading and interpreting different types of charts, including logarithmic axes.</p>
+                    <div className="series-stats">
+                      <span>1 Video</span>
+                      <span>Technical Skills</span>
                     </div>
                   </div>
                 </div>

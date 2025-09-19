@@ -20,9 +20,17 @@ export const videos = [
     filename: "Walkthrough_3.mp4",
     description: "Finalizing submissions, review process, and best practices for Project Zephyrus.",
     category: "Submission Walkthrough"
+  },
+  {
+    id: 4,
+    title: "Understanding Logarithmic Axes",
+    filename: "logarithmic_axis.mp4",
+    description: "Learn how to properly read, interpret, and analyze charts with logarithmic axes for accurate data extraction.",
+    category: "Chart Analysis"
   }
 ];
 
 export const videoCategories = [
-  "Submission Walkthrough"
+  "Submission Walkthrough",
+  "Chart Analysis"
 ];
