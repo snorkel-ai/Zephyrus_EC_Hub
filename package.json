@@ -2,7 +2,7 @@
   "name": "zephyrus-ec-guidelines",
   "version": "1.0.0",
   "description": "React app displaying Project Zephyrus EC Guidelines",
-  "homepage": ".",
+  "homepage": "https://snorkel-ai.github.io/Zephyrus_EC_Hub",
   "main": "index.js",
   "scripts": {
     "start": "PORT=3002 react-scripts start",
